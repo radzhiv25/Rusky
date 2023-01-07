@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,66 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Rusky</title>
 </head>
-<body class="">
-    <div class="nav flex sticky top-0 items-center px-10 py-5 border-bottom bg-white"> 
-        <p class="text-transparent mr-auto text-3xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-            Rusky 
+
+<body>
+    <div class="nav flex sticky top-0 items-center px-10 py-5 border-bottom bg-white sm md">
+        <p
+            class="text-transparent mr-auto text-3xl font-bold bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+            <a href="#home"> Rusky </a>
         </p>
-        <ul class="flex items-center space-x-5 font-semibold">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#flavor">Flavors</a></li>
-            <li><a href="#customer">Customers</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+        <ul class="flex items-center space-x-5 font-semibold ">
+            <li><a href="#home" class="hover:text-blue-700">Home</a></li>
+            <li><a href="#about" class="hover:text-blue-700">About Us</a></li>
+            <li><a href="#flavor" class="hover:text-blue-700">Flavors</a></li>
+            <li><a href="#customer" class="hover:text-blue-700">Customers</a></li>
+            <li><a href="#contact" class="hover:text-blue-700">Contact Us</a></li>
         </ul>
     </div>
-    <p class="text-center text-transparent" id="home">home</p>
-    <div class="home m-10 mt-16 flex p-5 items-center">
+    <p class="text-center text-transparent sm md " id="home">home</p>
+    <div class="home mt-10 ml-10 flex p-5 items-center md:flex-row bg-gradient-to-r from-[#f6d5f7] rounded-lg">
         <div class="p1">
             <h1 class="text-3xl font-bold">
-                Feel Inside the joyous and enigmatic taste of our ice-cream 
+                Feel Inside the joyous and enigmatic taste of our ice-cream
             </h1>
             <p class="mt-10">
-                We have several flavors that will make your taste bud in heavenly essence so feel free to order whenever you feel
+                We have several flavors that will make your taste bud in heavenly essence so feel free to order whenever
+                you feel
             </p>
-            <button class="mt-5 bg-orange-300 p-2 rounded-md">Order Now</button>
+            <button class="mt-5 bg-orange-300 p-2 rounded-md hover:bg-pink-300">Order Now</button>
         </div>
         <div class="img">
-            <img src="./Images/ice-cream-cone.webp" alt="" class="h-96">
+            <img src="./Images/ice-cream-cone.webp" alt="" class="h-96 rounded-full ">
         </div>
     </div>
     <p class="text-transparent text-center" id="about">About us</p>
-    <div class="about my-24 py-28 bg-gray-200 p-16 flex flex-col-2">
+    <div class="about my-24 py-28 bg-gray-200 p-16 flex flex-col-2 sm md">
         <div class="p1">
             <h1 class="text-3xl font-bold mb-10">
                 About Us
             </h1>
             <p class="mr-24">
-                At Rusky, We only use natural ingredients which you can find in your own kitchen. No preservative or artificical ingredients are added. The is the most differentiating factor we have out there. So feel free to order the taste which you prefer or want to try out.
+                At Rusky, We only use natural ingredients which you can find in your own kitchen. No preservative or
+                artificical ingredients are added. The is the most differentiating factor we have out there. So feel
+                free to order the taste which you prefer or want to try out.
             </p>
         </div>
         <div class="p2">
             <img src="./Images/coold-sweet-ice-cream-with-chocolate_144627-7294.webp" alt="">
         </div>
     </div>
-    <p class="text-center text-transparent mb-10" id="flavor">Flavors</p>
+    <p class="text-center text-transparent mb-12" id="flavor">Flavors</p>
     <h2 class="text-center text-4xl font-bold mb-5">What's new</h2>
     <div class="types p-10 pt-20 grid grid-cols-3 gap-5 bg-orange-100">
         <div class="img1">
             <img src="images/chocolate-ice-cream-dessert_144627-8363.webp" alt="" class="rounded-md h-[260px]">
             <p class="text-center mt-3 p-2 text-xl font-bold">Desert Ice Cream
                 <br>
-                <button class=" mt-3 p-2 border-2 hover:border-pink-400 rounded-md" >Order now</button>
+                <button class=" mt-3 p-2 border-2 hover:border-pink-400 rounded-md">Order now</button>
             </p>
         </div>
         <div class="img2">
-            <img src="images/ice-cream-scoops-bowl-mixed-ice-cream-ice-cream-cup-black-background_64762-40.webp" alt="" class="rounded-md h-[260px]">
+            <img src="images/ice-cream-scoops-bowl-mixed-ice-cream-ice-cream-cup-black-background_64762-40.webp" alt=""
+                class="rounded-md h-[260px]">
             <p class="text-center mt-3 p-2 text-xl font-bold">
                 Ice Cream Sundae
                 <br>
@@ -77,19 +84,30 @@
         </div>
     </div>
     <div class="foot-above p-16  bg-orange-300">
-        <h1 class="text-center mb-10 text-4xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Rusky</h1>
-        <div class="cont3 flex space-x-20">
-            <div class="offer">
-                <h1 class="text-center font-bold">What we offer</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid minus adipisci distinctio, impedit similique voluptas, ipsam repudiandae quas quisquam ex perspiciatis quod explicabo animi labore corrupti, est non ipsa tempore. Obcaecati accusantium voluptatibus non voluptatem, architecto natus sequi adipisci?</p>
+        <h1
+            class="text-center mb-10 text-4xl font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+            Rusky</h1>
+        <div class="cont3 flex space-x-20 sm md">
+            <div class="offer sm md">
+                <h1 class="text-center font-bold sm md">What we offer</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid minus adipisci distinctio,
+                    impedit similique voluptas, ipsam repudiandae quas quisquam ex perspiciatis quod explicabo animi
+                    labore corrupti, est non ipsa tempore. Obcaecati accusantium voluptatibus non voluptatem, architecto
+                    natus sequi adipisci?</p>
             </div>
             <div class="About">
-                <h1 class="text-center font-bold">About Us</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid minus adipisci distinctio, impedit similique voluptas, ipsam repudiandae quas quisquam ex perspiciatis quod explicabo animi labore corrupti, est non ipsa tempore. Obcaecati accusantium voluptatibus non voluptatem, architecto natus sequi adipisci?</p>
+                <h1 class="text-center font-bold sm md">About Us</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid minus adipisci distinctio,
+                    impedit similique voluptas, ipsam repudiandae quas quisquam ex perspiciatis quod explicabo animi
+                    labore corrupti, est non ipsa tempore. Obcaecati accusantium voluptatibus non voluptatem, architecto
+                    natus sequi adipisci?</p>
             </div>
             <div class="Legal">
                 <h1 class="text-center font-bold">Legal</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid minus adipisci distinctio, impedit similique voluptas, ipsam repudiandae quas quisquam ex perspiciatis quod explicabo animi labore corrupti, est non ipsa tempore. Obcaecati accusantium voluptatibus non voluptatem, architecto natus sequi adipisci?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aliquid minus adipisci distinctio,
+                    impedit similique voluptas, ipsam repudiandae quas quisquam ex perspiciatis quod Texplicabo animi
+                    labore corrupti, est non ipsa tempore. Obcaecati accusantium voluptatibus non voluptatem, architecto
+                    natus sequi adipisci?</p>
             </div>
         </div>
     </div>
@@ -101,7 +119,7 @@
                 <img src="./Images/twitter.png" alt="" class="w-6">
             </div>
             <p class="mt-2">
-                <strong>Subscribe  </strong>
+                <strong>Subscribe </strong>
                 To recieve an exclusive newsletter
             </p>
             <div class="input mt-2">
@@ -148,6 +166,10 @@
                 <li>Help & FAQs</li>
             </ul>
         </div>
+        <button onclick="topFunction()" id="myBtn" class=" btn m-10 bg-orange-300 hover:bg-orange-400  p-2 rounded-md">
+            back to Top</button>
     </div>
+    <script src="./icecream.js"></script>
 </body>
+
 </html>
